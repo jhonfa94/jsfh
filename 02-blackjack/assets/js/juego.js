@@ -59,10 +59,26 @@ const pedirCarta = () => {
 
 const valorCarta = (carta)=> {
 
-    const valor = carta[0]; 
+    const valor = carta.substring(0,carta.length-1); 
+    return (isNaN(valorCarta)) ? 
+            (valor === 'A') ? 11 : 10
+            : valor * 1;
+    
+    /* let puntos = 0;
+    //EVALUAMOS SI ES UN NUMERO 
+    if (isNaN(valor)) {
+        puntos = ( valorCarta === 'A') ? 11 : 10;                
+    }else{        
+        puntos = valor *1;        
+    }
+    console.log(puntos); */
+    
+    
 
 
     //return carta;
 }
 
-valorCarta('2D');
+const valor = valorCarta('AD');
+console.log(valor);
+
