@@ -4,6 +4,11 @@
 ========================= */ 
 import {saludar} from './js/componentes.js'
 
+/* ===================== 
+  IMPORTAMOS LOS ESTILOS CSS 
+========================= */ 
+import './styles.css';
+
 
 
 const nombre = 'Jhon Fabio ';
